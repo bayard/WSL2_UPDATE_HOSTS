@@ -1,4 +1,7 @@
 ## Update wsl2 hosts file with current ip of ubuntu VM.
+
+I once use wsl2host(https://github.com/shayne/go-wsl2-host) to map VM's IP to windows hostname, but the tool stop working after windows update. So I create this little tool to complete the job. Benifits are: fast(hostname mapping done after networking initialized immediately), efficient(only run once after network change, compare to wsl2host run every some seconds).
+
 1. Set **C:/Windows/System32/drivers/etc/hosts** permission  
 Set permission of ```C:/Windows/System32/drivers/etc/hosts```, grant all permission to current login user, 
 and set file as writable. Use ```"vi /mnt/c/Windows/System32/drivers/etc/hosts"``` to verify the file is writtable in ubuntu.
