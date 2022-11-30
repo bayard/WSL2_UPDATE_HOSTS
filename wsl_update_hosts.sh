@@ -14,4 +14,3 @@ if grep -q $TAG_STR "$HOST_FILE"; then
 else
   echo "\n#WSL2 host entry by acamar\n$ETH0_IP $HOST_NAME $TAG_STR" >>  $HOST_FILE
 fi
-#add host line
