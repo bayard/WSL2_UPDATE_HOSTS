@@ -1,5 +1,5 @@
 ## Update wsl2 hosts file with current ip of ubuntu VM.
-1. Set **C:/Windows/System32/drivers/etc/hosts permission**  
+1. Set **C:/Windows/System32/drivers/etc/hosts** permission  
 Set permission of ```C:/Windows/System32/drivers/etc/hosts```, grant all permission to current login user, 
 and set file as writable. Use ```"vi /mnt/c/Windows/System32/drivers/etc/hosts"``` to verify the file is writtable in ubuntu.
 
