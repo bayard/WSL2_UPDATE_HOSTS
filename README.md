@@ -14,7 +14,7 @@ and set file as writable. Use ```"vi /mnt/c/Windows/System32/drivers/etc/hosts"`
 **Make sure step 1 done correctly, scripts can be adjusted regard to different linux distributions(Ubuntu/Fedora/...).**
 
 ```
-Works great in:
-Windows 11/Ubuntu 18.04
+Working well in:
+Windows 11 version 22H2/Ubuntu 18.04
 11/30/2022
 ```
