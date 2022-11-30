@@ -1,0 +1,12 @@
+[Unit]
+Description=Update wsl2 hosts after network established
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/home/acamar/wsl/wsl_update_hosts.sh
+
+[Install]
+WantedBy=multi-user.target
