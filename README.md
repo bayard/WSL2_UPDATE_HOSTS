@@ -1,5 +1,4 @@
-<code>
-Update wsl2 hosts file with current ip of ubuntu VM.
+>Update wsl2 hosts file with current ip of ubuntu VM.
 
 1. Set C:/Windows/System32/drivers/etc/hosts permission
 Set permission of C:/Windows/System32/drivers/etc/hosts, grant all permission to current login user, and set file as writable.
@@ -18,4 +17,3 @@ sudo systemctl start update_wsl_hosts.service
 Works great in:
 Windows 11/Ubuntu 18.04
 11/30/2022
-</code>
