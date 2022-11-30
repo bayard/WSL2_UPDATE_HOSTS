@@ -1,5 +1,7 @@
 ## Update wsl2 hosts file with current ip of ubuntu VM.
 
+WSL2 virtual NIC connected to Hyper-V switch changes IP every time after VM restart, result in trouble to access VM using static IP or hostname. Bad design by Microsoft.
+
 I once use wsl2host(https://github.com/shayne/go-wsl2-host) to map VM's IP to windows hostname, but the tool stop working after windows update. So I create this little tool to complete the job. Benifits are: fast(hostname mapping done after networking initialized immediately), efficient(only run once after network change, compare to wsl2host run every some seconds).
 
 1. Set **C:/Windows/System32/drivers/etc/hosts** permission  
