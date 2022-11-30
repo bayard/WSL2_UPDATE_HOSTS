@@ -11,6 +11,8 @@ and set file as writable. Use ```"vi /mnt/c/Windows/System32/drivers/etc/hosts"`
 - ```sudo systemctl enable update_wsl_hosts.service```
 - ```sudo systemctl start update_wsl_hosts.service```
 
+**Make sure step 1 done correctly, scripts can be adjusted regard to different linux distributions(Ubuntu/Fedora/...).**
+
 ```
 Works great in:
 Windows 11/Ubuntu 18.04
