@@ -29,8 +29,7 @@ fi
 - ```sudo systemctl enable update_wsl_hosts.service```
 - ```sudo systemctl start update_wsl_hosts.service```
 
-4. Test result and done.
-```ping ubuntu1804.wsl in Windows to verify everything is done.```
+4. **ping ubuntu1804.wsl** in Windows to verify everything is done.  
 
 **Make sure step 1 done correctly, scripts can be adjusted regard to different linux distributions(Ubuntu/Fedora/...).**
 
