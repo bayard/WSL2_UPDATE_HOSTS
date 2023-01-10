@@ -12,5 +12,5 @@ if grep -q $TAG_STR "$HOST_FILE"; then
   TEMP_SED=$(sed -r "s/(.*)^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}) (.*$TAG_STR)(.*)/\1$ETH0_IP \3\4/g" $HOST_FILE)
   echo "$TEMP_SED" > $HOST_FILE
 else
-  echo "\n#WSL2 host entry by acamar\n$ETH0_IP $HOST_NAME $TAG_STR" >>  $HOST_FILE
+  echo "\n#WSL2 host entry by acamar\n $ETH0_IP $HOST_NAME $TAG_STR" >>  $HOST_FILE
 fi
