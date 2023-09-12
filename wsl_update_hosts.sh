@@ -4,7 +4,7 @@ HOST_FILE="/mnt/c/Windows/System32/drivers/etc/hosts"
 HOST_NAME="ubuntu1804.wsl"
 TAG_STR="#FKMS_AC"
 
-ETH0_IP=$(ifconfig eth0 | grep -w inet | awk '{print $2}')
+ETH0_IP=$(ip a | grep -Ew '^\s*inet.*eth0$' | awk '{print $2}' | cut -d"/" -f1)
 echo $ETH0_IP
 
 if grep -q $TAG_STR "$HOST_FILE"; then
